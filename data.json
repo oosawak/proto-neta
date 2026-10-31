@@ -5,7 +5,7 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-10-31",
-    "count": 28
+    "count": 29
   },
   "posts": [
     {
@@ -37,6 +37,21 @@
       "type": "proto",
       "markdown": "- 元の情報: X投稿 @Jomolos（Can Matrix、2026-10-30 17:30、トルコ語、@OdinLovis の投稿の引用） https://x.com/Jomolos/status/2116085198504992855 ／ 一次情報: GitHub https://github.com/lovisdotio/video-to-game （MIT）／ ギャラリー https://fal-video-to-game.vercel.app\n- 要点: 「まずゲームの動画をAIに作らせ、次に別のAIへ『これを遊べる形にして』と言わせる」という逆順の試作法を、コーディングエージェント向けSkillとして公開したプロジェクト。一次情報によると、動画モデル（fal上のMiniMax H3 Max）で10〜15秒のプレイ動画を作ると、それがそのまま設計書になり、エージェントがコマ単位で映像を読み、画像・3Dモデル・音をすべてfalで生成し、Three.jsだけで単一index.htmlのゲームに仕上げ、自分でプレイして録画し、元動画と見比べながら直す。実績は31本のミニゲームで、falの呼び出し総額は約202ドル（1本あたり約6ドル、エージェント側の費用は別）。Claude CodeだけでなくCodex／Cursor／Geminiでも使える。\n- 面白いところ: エージェントの弱いところ（見た目と遊びの設計）を動画モデルに先に決めさせ、エージェントは「再現と実装」に専念させる分担。成果物が単一HTML＋Three.jsという、自分の絶対条件と一致する形な点。投稿者（Jomolos）の留保どおり、出てくるのは小さなデモで、独創的なゲームにはなりにくい、という限界も含めての材料。\n- 作れそうなもの: このSkillをCodexに入れ、短いプレイ動画1本から小さなブラウザゲームを1本再現する試作。自分の通常の作り方（仕様書→Codex実装）と、見た目の出発点の違い・手間・コストを比べる材料にする。\n- 入口: チャット",
       "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @Jomolos（Can Matrix、2026-10-30 17:30、トルコ語、@OdinLovis の投稿の引用） <a href=\"https://x.com/Jomolos/status/2116085198504992855\" target=\"_blank\" rel=\"noopener\">https://x.com/Jomolos/status/2116085198504992855</a> ／ 一次情報: GitHub <a href=\"https://github.com/lovisdotio/video-to-game\" target=\"_blank\" rel=\"noopener\">https://github.com/lovisdotio/video-to-game</a> （MIT）／ ギャラリー <a href=\"https://fal-video-to-game.vercel.app\" target=\"_blank\" rel=\"noopener\">https://fal-video-to-game.vercel.app</a></li>\n<li><strong>要点</strong>: 「まずゲームの動画をAIに作らせ、次に別のAIへ『これを遊べる形にして』と言わせる」という逆順の試作法を、コーディングエージェント向けSkillとして公開したプロジェクト。一次情報によると、動画モデル（fal上のMiniMax H3 Max）で10〜15秒のプレイ動画を作ると、それがそのまま設計書になり、エージェントがコマ単位で映像を読み、画像・3Dモデル・音をすべてfalで生成し、Three.jsだけで単一index.htmlのゲームに仕上げ、自分でプレイして録画し、元動画と見比べながら直す。実績は31本のミニゲームで、falの呼び出し総額は約202ドル（1本あたり約6ドル、エージェント側の費用は別）。Claude CodeだけでなくCodex／Cursor／Geminiでも使える。</li>\n<li><strong>面白いところ</strong>: エージェントの弱いところ（見た目と遊びの設計）を動画モデルに先に決めさせ、エージェントは「再現と実装」に専念させる分担。成果物が単一HTML＋Three.jsという、自分の絶対条件と一致する形な点。投稿者（Jomolos）の留保どおり、出てくるのは小さなデモで、独創的なゲームにはなりにくい、という限界も含めての材料。</li>\n<li><strong>作れそうなもの</strong>: このSkillをCodexに入れ、短いプレイ動画1本から小さなブラウザゲームを1本再現する試作。自分の通常の作り方（仕様書→Codex実装）と、見た目の出発点の違い・手間・コストを比べる材料にする。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
+    {
+      "id": "proto/unslop",
+      "slug": "unslop",
+      "title": "unslop：AIっぽいUIを「デザインされた画面」に直すClaudeスキル",
+      "date": "2026-10-31",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "バイブコーディングで生まれた「AIっぽい（slopな）」UIを、デザイナーの赤入れのように直すClaude Code向けスキル。監査→方向づけ→要素ごとのパスの順で直し、ランディングページ／ダッシュボード／モバイルアプリに使える。CC BY 4.0。",
+      "source": "https://x.com/gkxspace/status/2116367454557655359",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: X投稿 @gkxspace（余温、2026-10-31 12:11、中国語） https://x.com/gkxspace/status/2116367454557655359 ／ 元の投稿: 作者 @heydamir（Damir Sokolovsky）の引用元投稿 ／ 一次情報: GitHub https://github.com/heydamir/unslop （CC BY 4.0、スター約2,200、2026-10-29公開）\n- 要点: 「slop（AI生成っぽい）UIを爆改（大幅改造）する」過程をスキルに封入して公開した、という紹介投稿。一次情報によると unslop は Claude Code向けのスキルで、進め方は3段構え。①監査: 紫グラデーション、光彩、絵文字ラベル、大げさな文案、間隔のばらつきなど「slopの兆候」を場所付きで洗い出す。②方向づけ: 製品から性格・世界観・色を担う場面・署名的ディテールを決める。③パス: 間隔→色→アイコン→文案→書体→レイアウト→細部→ビジュアル→動き、の順に画面を直していく。対象は Next.js／React／Vue／Svelte／Tailwind／素のHTML・CSSで、ランディングページ、ダッシュボード、アプリに加え、URLだけ渡して公開中のサイトにも使える。すでに良い画面には「良い」と言って小さな改善だけを提案する、という節度も書かれている。導入はリポをクローンし、skills/unslop を ~/.claude/skills（またはプロジェクトの .claude/skills）へコピーして「/unslop」と打つだけ。おまけに、直っていく様子の10秒未満の動画（投稿用）も作れる。\n- 面白いところ: emilkowalski/skills の件と同じく「判断の基準をスキルで配る」流れで、こちらは「AIっぽさの兆候リスト＋直す順番」という監査の型に特化している点。先に監査と方向づけを提示して人が早めに舵を取れる進め方も、自分の承認の型に近い。作者本人が同じ作業を仕事として請ける導線（1画面3日）まで含めた公開の仕方も含めて参考になる。\n- 作れそうなもの: Codex／Claude Code側に unslop を入れ、自分のサイト群のどれか1画面（例: グルメサイトの一覧やトップ）で監査だけを回して、指摘が実務に使えるかを見る試作。効くようなら、共通テンプレートの見直し手順（DESIGN.mdの流れ）に監査パスとして取り込む候補にする。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @gkxspace（余温、2026-10-31 12:11、中国語） <a href=\"https://x.com/gkxspace/status/2116367454557655359\" target=\"_blank\" rel=\"noopener\">https://x.com/gkxspace/status/2116367454557655359</a> ／ 元の投稿: 作者 @heydamir（Damir Sokolovsky）の引用元投稿 ／ 一次情報: GitHub <a href=\"https://github.com/heydamir/unslop\" target=\"_blank\" rel=\"noopener\">https://github.com/heydamir/unslop</a> （CC BY 4.0、スター約2,200、2026-10-29公開）</li>\n<li><strong>要点</strong>: 「slop（AI生成っぽい）UIを爆改（大幅改造）する」過程をスキルに封入して公開した、という紹介投稿。一次情報によると unslop は Claude Code向けのスキルで、進め方は3段構え。①監査: 紫グラデーション、光彩、絵文字ラベル、大げさな文案、間隔のばらつきなど「slopの兆候」を場所付きで洗い出す。②方向づけ: 製品から性格・世界観・色を担う場面・署名的ディテールを決める。③パス: 間隔→色→アイコン→文案→書体→レイアウト→細部→ビジュアル→動き、の順に画面を直していく。対象は Next.js／React／Vue／Svelte／Tailwind／素のHTML・CSSで、ランディングページ、ダッシュボード、アプリに加え、URLだけ渡して公開中のサイトにも使える。すでに良い画面には「良い」と言って小さな改善だけを提案する、という節度も書かれている。導入はリポをクローンし、skills/unslop を ~/.claude/skills（またはプロジェクトの .claude/skills）へコピーして「/unslop」と打つだけ。おまけに、直っていく様子の10秒未満の動画（投稿用）も作れる。</li>\n<li><strong>面白いところ</strong>: emilkowalski/skills の件と同じく「判断の基準をスキルで配る」流れで、こちらは「AIっぽさの兆候リスト＋直す順番」という監査の型に特化している点。先に監査と方向づけを提示して人が早めに舵を取れる進め方も、自分の承認の型に近い。作者本人が同じ作業を仕事として請ける導線（1画面3日）まで含めた公開の仕方も含めて参考になる。</li>\n<li><strong>作れそうなもの</strong>: Codex／Claude Code側に unslop を入れ、自分のサイト群のどれか1画面（例: グルメサイトの一覧やトップ）で監査だけを回して、指摘が実務に使えるかを見る試作。効くようなら、共通テンプレートの見直し手順（DESIGN.mdの流れ）に監査パスとして取り込む候補にする。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
     },
     {
       "id": "proto/stickman-video-director",
