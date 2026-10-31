@@ -5,7 +5,7 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-10-31",
-    "count": 21
+    "count": 22
   },
   "posts": [
     {
@@ -187,6 +187,21 @@
       "type": "proto",
       "markdown": "- 元の情報: X投稿 @nocard0000（KIIN｜TRPG・創作ツール、2026-10-29 21:00） https://x.com/nocard0000/status/2115775667308552242 ／ 一次情報: BOOTH https://kiin.booth.pm/items/9065708 （v1.0、無料／応援版100円は内容同一）\n- 要点: TRPG向けの間取り・マップをブラウザで作る無料ツール。ZIPを展開して index.html をPCブラウザで開くだけで動く単一HTMLの道具で、部屋を描いて廊下でつなぎ、41種の家具・設備を置き、青焼き・古紙など6種の仕上げでPNG書き出しができる。洋館・研究棟・観測所の見本つき、編集データ（.mapstudio.json）の保存・再開にも対応。作ったマップは無料・有料のシナリオへの掲載・同梱や動画・配信の商用利用も可で、クレジット・事前連絡は不要、という利用条件も一次情報で確認できた（これは「作ったマップ」についての条件で、ツール本体の再配布条件はページに記載なし）。\n- 面白いところ: 自分の作り方とまったく同じ「ZIPを開いてブラウザでそのまま動く単一HTML」を、TRPGの間取り作りという一点に絞って配っている点。関連ツールとして、書き出したPNGに公開演出や経路アニメを付ける「演出スタジオ」も案内されている。\n- 作れそうなもの: この道具そのものを使う試作（小説やゲームの舞台の間取りを1枚作る）に加えて、間取りデータをJSONで持ってPNGへ書き出す作りを自分のゲーム／小説サイト向けに真似る試作。Markdownで場面を定義する1文字アドベンチャー等の「舞台」を絵にする部品としても考えられる。\n- 入口: チャット",
       "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @nocard0000（KIIN｜TRPG・創作ツール、2026-10-29 21:00） <a href=\"https://x.com/nocard0000/status/2115775667308552242\" target=\"_blank\" rel=\"noopener\">https://x.com/nocard0000/status/2115775667308552242</a> ／ 一次情報: BOOTH <a href=\"https://kiin.booth.pm/items/9065708\" target=\"_blank\" rel=\"noopener\">https://kiin.booth.pm/items/9065708</a> （v1.0、無料／応援版100円は内容同一）</li>\n<li><strong>要点</strong>: TRPG向けの間取り・マップをブラウザで作る無料ツール。ZIPを展開して index.html をPCブラウザで開くだけで動く単一HTMLの道具で、部屋を描いて廊下でつなぎ、41種の家具・設備を置き、青焼き・古紙など6種の仕上げでPNG書き出しができる。洋館・研究棟・観測所の見本つき、編集データ（.mapstudio.json）の保存・再開にも対応。作ったマップは無料・有料のシナリオへの掲載・同梱や動画・配信の商用利用も可で、クレジット・事前連絡は不要、という利用条件も一次情報で確認できた（これは「作ったマップ」についての条件で、ツール本体の再配布条件はページに記載なし）。</li>\n<li><strong>面白いところ</strong>: 自分の作り方とまったく同じ「ZIPを開いてブラウザでそのまま動く単一HTML」を、TRPGの間取り作りという一点に絞って配っている点。関連ツールとして、書き出したPNGに公開演出や経路アニメを付ける「演出スタジオ」も案内されている。</li>\n<li><strong>作れそうなもの</strong>: この道具そのものを使う試作（小説やゲームの舞台の間取りを1枚作る）に加えて、間取りデータをJSONで持ってPNGへ書き出す作りを自分のゲーム／小説サイト向けに真似る試作。Markdownで場面を定義する1文字アドベンチャー等の「舞台」を絵にする部品としても考えられる。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
+    {
+      "id": "proto/kanvas-board",
+      "slug": "kanvas-board",
+      "title": "Kanvas：AIエージェントと人が同じボードを見るタスク管理",
+      "date": "2026-10-31",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "Claude CodeやCodexに頼んだ作業の進み具合を、AIと人が同じタスクボードで確かめられる無料ツール（MIT）。エージェントが計画と進捗をボードへ書き込み、人はブラウザで眺めて承認・軌道修正する。",
+      "source": "https://x.com/AiAircle34052/status/2116063805641986140",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: X投稿 @AiAircle34052（Aircle｜AIコミュニティ、2026-10-30 16:05） https://x.com/AiAircle34052/status/2116063805641986140 ／ 元の投稿: @XMihura（Mihura）の紹介動画付き投稿 https://x.com/XMihura/status/2115110716629987376 ／ 一次情報: GitHub https://github.com/XMihura/Kanvas 、PyPI「kanvas-board」\n- 要点: Claude CodeやCodexに頼んだ作業が今どこまで進んでいるかを、AIと人が同じボードで見られる無料ツール「Kanvas」が公開された、という紹介投稿。一次情報によると、計画と進捗はプロジェクト内の `kanvas.json` 1ファイルに置かれ、エージェントは `kanvas.py` というCLI経由でだけ書き込む（手順に合わない変更は弾かれる）。人はブラウザでボードを開き、承認・軌道修正・レビューをする。導入はプロジェクトのフォルダで `uvx kanvas-board init` と打つだけで、ボード一式と「AI向けの使い方スキル」が `.agents/skills/kanvas/`（Claude Code用は `.claude/skills/` にも）入る。実体はJSON 1つ＋Pythonスクリプト1つ＋HTML 1枚で、アカウントもビルドも依存追加もなし。Claude Code／Codex／Cursor／Gemini CLI／OpenCode／GitHub Copilotなど、コマンドを実行できるAIなら複数を同時に使える。なお同名の別サービス（getkanvas.ai等）とは別物。\n- 面白いところ: 「頼んだ仕事の進捗はチャットを遡らないと分からない」という、自分のCodex運用でも起きている問題への答えになっている点。進捗の置き場がクラウドのボードではなく、コードの隣のJSONファイル1つで、エージェント側の書き込み口（CLIとスキル）までセットで配っている点。\n- 作れそうなもの: 自分のどれか1リポ（例: neta-cho や小さなゲーム試作）で `uvx kanvas-board init` を入れ、Codexへの指示書運用と並行して、計画と進捗をボードに書かせてみる試作。今の「指示書Markdown＋報告Markdown」の往復と比べて、進み具合の見え方と手間がどう変わるかを見る。自分の処理量の記録（work-log）の置き換え・連携先としても考えられる。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @AiAircle34052（Aircle｜AIコミュニティ、2026-10-30 16:05） <a href=\"https://x.com/AiAircle34052/status/2116063805641986140\" target=\"_blank\" rel=\"noopener\">https://x.com/AiAircle34052/status/2116063805641986140</a> ／ 元の投稿: @XMihura（Mihura）の紹介動画付き投稿 <a href=\"https://x.com/XMihura/status/2115110716629987376\" target=\"_blank\" rel=\"noopener\">https://x.com/XMihura/status/2115110716629987376</a> ／ 一次情報: GitHub <a href=\"https://github.com/XMihura/Kanvas\" target=\"_blank\" rel=\"noopener\">https://github.com/XMihura/Kanvas</a> 、PyPI「kanvas-board」</li>\n<li><strong>要点</strong>: Claude CodeやCodexに頼んだ作業が今どこまで進んでいるかを、AIと人が同じボードで見られる無料ツール「Kanvas」が公開された、という紹介投稿。一次情報によると、計画と進捗はプロジェクト内の `kanvas.json` 1ファイルに置かれ、エージェントは `kanvas.py` というCLI経由でだけ書き込む（手順に合わない変更は弾かれる）。人はブラウザでボードを開き、承認・軌道修正・レビューをする。導入はプロジェクトのフォルダで `uvx kanvas-board init` と打つだけで、ボード一式と「AI向けの使い方スキル」が `.agents/skills/kanvas/`（Claude Code用は `.claude/skills/` にも）入る。実体はJSON 1つ＋Pythonスクリプト1つ＋HTML 1枚で、アカウントもビルドも依存追加もなし。Claude Code／Codex／Cursor／Gemini CLI／OpenCode／GitHub Copilotなど、コマンドを実行できるAIなら複数を同時に使える。なお同名の別サービス（getkanvas.ai等）とは別物。</li>\n<li><strong>面白いところ</strong>: 「頼んだ仕事の進捗はチャットを遡らないと分からない」という、自分のCodex運用でも起きている問題への答えになっている点。進捗の置き場がクラウドのボードではなく、コードの隣のJSONファイル1つで、エージェント側の書き込み口（CLIとスキル）までセットで配っている点。</li>\n<li><strong>作れそうなもの</strong>: 自分のどれか1リポ（例: neta-cho や小さなゲーム試作）で `uvx kanvas-board init` を入れ、Codexへの指示書運用と並行して、計画と進捗をボードに書かせてみる試作。今の「指示書Markdown＋報告Markdown」の往復と比べて、進み具合の見え方と手間がどう変わるかを見る。自分の処理量の記録（work-log）の置き換え・連携先としても考えられる。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
     },
     {
       "id": "proto/img2threejs",
