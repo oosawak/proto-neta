@@ -5,7 +5,7 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-10-31",
-    "count": 24
+    "count": 25
   },
   "posts": [
     {
@@ -262,6 +262,21 @@
       "type": "proto",
       "markdown": "- 元の情報: X投稿 @songsong（宋宋、2026-10-29 10:32、中国語） https://x.com/songsong/status/2115617785376276872 ／ 一次情報: GitHub https://github.com/freemocap/freemocap （AGPL-3.0）\n- 要点: 撮影した実写の人の動きを3D骨格アニメーションに変換し、Blenderへ取り込めるオープンソースのモーションキャプチャ、という紹介投稿。一次情報によると、FreeMoCapは専用機材に依存しない低コストな研究水準のモーションキャプチャをうたうプロジェクトで、pipで入れてGUIから使う形が用意されている（CUDA版／CPU版）。手を振る・歩く・踊る・攻撃モーションなど、自分で演じた動きをそのままゲームキャラのアニメーション素材にできる、というのが投稿の主旨。\n- 面白いところ: AI生成モーション（MotionBricksの件）とは逆向きで、「自分の体の動き」がそのまま素材になる点。高価なモーションキャプチャ機材なしで、部屋で撮って完結する点。\n- 作れそうなもの: ウェブカメラ等で自分の歩行や攻撃モーションを撮り、FreeMoCapで骨格化してBlender経由で自作ゲーム／VRMキャラへ当てる試作。ライセンスがAGPL-3.0なので、組み込み方によっては注意が要る点も試作を始める段で確認する。MotionBricks（生成）とFreeMoCap（実写変換）で、モーション素材の作り方が両方向そろう。\n- 入口: チャット",
       "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @songsong（宋宋、2026-10-29 10:32、中国語） <a href=\"https://x.com/songsong/status/2115617785376276872\" target=\"_blank\" rel=\"noopener\">https://x.com/songsong/status/2115617785376276872</a> ／ 一次情報: GitHub <a href=\"https://github.com/freemocap/freemocap\" target=\"_blank\" rel=\"noopener\">https://github.com/freemocap/freemocap</a> （AGPL-3.0）</li>\n<li><strong>要点</strong>: 撮影した実写の人の動きを3D骨格アニメーションに変換し、Blenderへ取り込めるオープンソースのモーションキャプチャ、という紹介投稿。一次情報によると、FreeMoCapは専用機材に依存しない低コストな研究水準のモーションキャプチャをうたうプロジェクトで、pipで入れてGUIから使う形が用意されている（CUDA版／CPU版）。手を振る・歩く・踊る・攻撃モーションなど、自分で演じた動きをそのままゲームキャラのアニメーション素材にできる、というのが投稿の主旨。</li>\n<li><strong>面白いところ</strong>: AI生成モーション（MotionBricksの件）とは逆向きで、「自分の体の動き」がそのまま素材になる点。高価なモーションキャプチャ機材なしで、部屋で撮って完結する点。</li>\n<li><strong>作れそうなもの</strong>: ウェブカメラ等で自分の歩行や攻撃モーションを撮り、FreeMoCapで骨格化してBlender経由で自作ゲーム／VRMキャラへ当てる試作。ライセンスがAGPL-3.0なので、組み込み方によっては注意が要る点も試作を始める段で確認する。MotionBricks（生成）とFreeMoCap（実写変換）で、モーション素材の作り方が両方向そろう。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
+    {
+      "id": "proto/equinox-31b",
+      "slug": "equinox-31b",
+      "title": "Equinox-31B：ダークな冒険と穏やかな日常を両立させた物語生成モデル",
+      "date": "2026-10-31",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "LatitudeGamesがGemma 4 31Bを物語生成向けに調整したローカル実行可能なモデル。過酷なテキストアドベンチャーと日常系長編という対極のデータで学習し、戦闘から会話までを1モデルでこなす狙い。GGUF版あり。",
+      "source": "https://x.com/ai_hakase_/status/2058050799658291230",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: X投稿 @ai_hakase_（ハカセ アイ、2026-05-23 14:02） https://x.com/ai_hakase_/status/2058050799658291230 ／ 一次情報: Hugging Face https://huggingface.co/LatitudeGames/Equinox-31B\n- 要点: 物語生成に特化したモデル「Equinox-31B」の紹介投稿。一次情報によると、これはAI Dungeonの運営で知られるLatitudeGamesが Google の Gemma 4 31B Instruct を土台に2エポックのSFT（教師あり微調整）をしたもので、学習データは対極の2系統をバランスよく混ぜている。①Wayfarer 2 系＝選択に重みがあり世界が押し返してくる、過酷なダークテキストアドベンチャー。②Hearthfire 系＝日常の機微と感情の流れを描く長編。どちらも二人称・現在形が中心で、三人称のデータも少量含む。量子化したGGUF版の重みも別途配布され、推奨設定（temperature 0.8、repetition_penalty 1.05、min_p 0.025）も示されている。AI Dungeon上でも試せる（要サブスクリプション）。ライセンス表記は今回の確認範囲では未確認。なお「バランス型」という設計上、とことん過酷な作風なら同社のHarbinger／Wayfarer 2、静かな作風ならHearthfireが専門、と一次情報自身が位置づけている。\n- 面白いところ: 「戦闘シーンの緊張」と「何も起きない会話の間」を、別モデルではなく1つのモデルの中で同居させる調整の方向。ゲームのNPC対話と小説執筆の両方に向けられている点も、自分の制作範囲（ブラウザゲームと小説）と重なる。推論の癖（推論データセットなし、思考モード抑制）まで含めて「物語専用の道具」として割り切られている点。\n- 作れそうなもの: 自宅のGPUサーバーでGGUF版を動かし、日本語の短い場面（戦国ものの会話と合戦の2場面など）を生成して、作風の両極と日本語の持ち具合を見る試作。量子化の段階によって必要メモリが変わるため、載せ方は試作開始時に確認する。1文字アドベンチャーのようなゲーム側の文章生成エンジンとしての適性もあわせて見る。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @ai_hakase_（ハカセ アイ、2026-05-23 14:02） <a href=\"https://x.com/ai_hakase_/status/2058050799658291230\" target=\"_blank\" rel=\"noopener\">https://x.com/ai_hakase_/status/2058050799658291230</a> ／ 一次情報: Hugging Face <a href=\"https://huggingface.co/LatitudeGames/Equinox-31B\" target=\"_blank\" rel=\"noopener\">https://huggingface.co/LatitudeGames/Equinox-31B</a></li>\n<li><strong>要点</strong>: 物語生成に特化したモデル「Equinox-31B」の紹介投稿。一次情報によると、これはAI Dungeonの運営で知られるLatitudeGamesが Google の Gemma 4 31B Instruct を土台に2エポックのSFT（教師あり微調整）をしたもので、学習データは対極の2系統をバランスよく混ぜている。①Wayfarer 2 系＝選択に重みがあり世界が押し返してくる、過酷なダークテキストアドベンチャー。②Hearthfire 系＝日常の機微と感情の流れを描く長編。どちらも二人称・現在形が中心で、三人称のデータも少量含む。量子化したGGUF版の重みも別途配布され、推奨設定（temperature 0.8、repetition_penalty 1.05、min_p 0.025）も示されている。AI Dungeon上でも試せる（要サブスクリプション）。ライセンス表記は今回の確認範囲では未確認。なお「バランス型」という設計上、とことん過酷な作風なら同社のHarbinger／Wayfarer 2、静かな作風ならHearthfireが専門、と一次情報自身が位置づけている。</li>\n<li><strong>面白いところ</strong>: 「戦闘シーンの緊張」と「何も起きない会話の間」を、別モデルではなく1つのモデルの中で同居させる調整の方向。ゲームのNPC対話と小説執筆の両方に向けられている点も、自分の制作範囲（ブラウザゲームと小説）と重なる。推論の癖（推論データセットなし、思考モード抑制）まで含めて「物語専用の道具」として割り切られている点。</li>\n<li><strong>作れそうなもの</strong>: 自宅のGPUサーバーでGGUF版を動かし、日本語の短い場面（戦国ものの会話と合戦の2場面など）を生成して、作風の両極と日本語の持ち具合を見る試作。量子化の段階によって必要メモリが変わるため、載せ方は試作開始時に確認する。1文字アドベンチャーのようなゲーム側の文章生成エンジンとしての適性もあわせて見る。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
     },
     {
       "id": "proto/emilkowalski-skills",
