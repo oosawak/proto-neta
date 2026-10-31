@@ -2,6 +2,8 @@
 
 「この先、試作してみたいもの」の種を貯める場所。発信のネタ帳（neta-cho リポの neta.md）と分けて、作る方のネタはここに置く。
 
+公開ページ: https://oosawak.github.io/proto-neta/
+
 Markdown CMS と同じ作りの静的サイト:
 
 - 正本: `content/posts/` の Markdown（1件＝1ファイル、frontmatter 付き）
