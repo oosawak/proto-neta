@@ -5,7 +5,7 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-10-31",
-    "count": 29
+    "count": 30
   },
   "posts": [
     {
@@ -427,6 +427,21 @@
       "type": "proto",
       "markdown": "- 元の情報: X投稿 @Yarad_ai（Yarad、2026-10-30 20:01、ペルシャ語） https://x.com/Yarad_ai/status/2116123402834436258 ／ 一次情報: GitHub https://github.com/Donchitos/Claude-Code-Game-Studios （MIT、テンプレートリポ、スター約3万）\n- 要点: Claude Codeを「ゲーム開発スタジオ」に変えるオープンソースのプロジェクト、という紹介投稿。一次情報によると中身は、専門エージェント49体（ディレクター層／部門リード／専門担当の3階層）、スラッシュコマンドとして使うスキル74種、自動チェックのフック15種、パス別のルール14種、文書テンプレート62種。対応エンジンはGodot 4／Unity／Unreal Engine 5で、エンジン専門の担当も分かれている。始め方は、リポをクローン（またはテンプレートとして使用）→ Claude Codeで開く →「/start」で現在地を聞かれて案内が始まる、の3段階。設定は project.yaml の modes.rigor（minimal／standard／full）で「どれだけ正式な手順を踏むか」を切り替える。\n- 面白いところ: エージェントの人数合わせではなく、「誰が何に責任を持ち、どこで品質チェックが入るか」というスタジオの組織そのものを配っている点。一次情報の実測も正直で、手順を重くした standard はコードを書く前に文書30本を書いたが、目隠し評価では最下位だった（＝文書の量はゲームの良さにならなかった）と自ら公表し、既定は一番軽い minimal になっている点。\n- 作れそうなもの: このテンプレートをクローンし、自分の小さなゲーム題材（1文字アドベンチャーのような分岐物やThree.jsの小品）で /start から vertical slice までを回してみる試作。自分の今の回し方（Museと相談→CodexへMarkdownで指示）と比べて、役割分担と品質ゲートがどこまで効くかを見る材料になる。学校のゲーム制作の授業（Unity／Unreal）の進め方の参考にもなりうる。\n- 追記（2026-10-31、別口の紹介）: X投稿 @RoundtableSpace（0xMarioNawfal、2026-10-30 15:15、英語） https://x.com/RoundtableSpace/status/2116051221945471445 でも紹介された。「50人のチームがなくても夢のゲーム作りを始められる」という打ち出しで、再生数は約3.6万と拡散面でも大きかった。\n- 入口: チャット",
       "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @Yarad_ai（Yarad、2026-10-30 20:01、ペルシャ語） <a href=\"https://x.com/Yarad_ai/status/2116123402834436258\" target=\"_blank\" rel=\"noopener\">https://x.com/Yarad_ai/status/2116123402834436258</a> ／ 一次情報: GitHub <a href=\"https://github.com/Donchitos/Claude-Code-Game-Studios\" target=\"_blank\" rel=\"noopener\">https://github.com/Donchitos/Claude-Code-Game-Studios</a> （MIT、テンプレートリポ、スター約3万）</li>\n<li><strong>要点</strong>: Claude Codeを「ゲーム開発スタジオ」に変えるオープンソースのプロジェクト、という紹介投稿。一次情報によると中身は、専門エージェント49体（ディレクター層／部門リード／専門担当の3階層）、スラッシュコマンドとして使うスキル74種、自動チェックのフック15種、パス別のルール14種、文書テンプレート62種。対応エンジンはGodot 4／Unity／Unreal Engine 5で、エンジン専門の担当も分かれている。始め方は、リポをクローン（またはテンプレートとして使用）→ Claude Codeで開く →「/start」で現在地を聞かれて案内が始まる、の3段階。設定は project.yaml の modes.rigor（minimal／standard／full）で「どれだけ正式な手順を踏むか」を切り替える。</li>\n<li><strong>面白いところ</strong>: エージェントの人数合わせではなく、「誰が何に責任を持ち、どこで品質チェックが入るか」というスタジオの組織そのものを配っている点。一次情報の実測も正直で、手順を重くした standard はコードを書く前に文書30本を書いたが、目隠し評価では最下位だった（＝文書の量はゲームの良さにならなかった）と自ら公表し、既定は一番軽い minimal になっている点。</li>\n<li><strong>作れそうなもの</strong>: このテンプレートをクローンし、自分の小さなゲーム題材（1文字アドベンチャーのような分岐物やThree.jsの小品）で /start から vertical slice までを回してみる試作。自分の今の回し方（Museと相談→CodexへMarkdownで指示）と比べて、役割分担と品質ゲートがどこまで効くかを見る材料になる。学校のゲーム制作の授業（Unity／Unreal）の進め方の参考にもなりうる。</li>\n<li><strong>追記（2026-10-31、別口の紹介）</strong>: X投稿 @RoundtableSpace（0xMarioNawfal、2026-10-30 15:15、英語） <a href=\"https://x.com/RoundtableSpace/status/2116051221945471445\" target=\"_blank\" rel=\"noopener\">https://x.com/RoundtableSpace/status/2116051221945471445</a> でも紹介された。「50人のチームがなくても夢のゲーム作りを始められる」という打ち出しで、再生数は約3.6万と拡散面でも大きかった。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
+    {
+      "id": "proto/chatgpt-sites",
+      "slug": "chatgpt-sites",
+      "title": "ChatGPT Sites：中身はCloudflare Workersで、D1とR2が厚めに付いてくるという話",
+      "date": "2026-10-31",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "無料のCloudflare Workersの代わりにChatGPT Sitesを使っている、という実践報告。Plus以上でサイトを作り放題、中身はWorkersで、サイトごとに10GBのD1とほぼ無制限のR2が付くという。自分のCloudflare基盤との比較材料として。ただし各上限は投稿者の主張で、公式仕様は未確認。",
+      "source": "https://x.com/nakasyou0/status/2116176314621460594",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: X投稿 @nakasyou0（nakasyou、2026-10-30 23:32） https://x.com/nakasyou0/status/2116176314621460594 ／ 投稿内にURLなし。ChatGPT Sitesの公式情報は今回は未確認\n- 要点: 投稿者の実践報告。最近は無料のCloudflare Workersの代わりに ChatGPT Sites を使っている。主張の骨子は次のとおり。Plus以上のプランなら Sites を作り放題で、中身は Cloudflare Workers。そのうえで、Workers Paid相当の10GBの D1（SQLiteデータベース）がサイトごとに付き、オブジェクトストレージの R2 がほぼ使い放題（リミットは明記されていない、とのこと）なのでファイルを置きまくっている。単純な D1＋R2 の Worker なら、ChatGPT Sitesへデプロイした方が「めっちゃ強化されたの」が付いてくるのでおすすめ。一方で Durable Objects や Vectorize は使えない。いずれも投稿者の主張であり、ChatGPT Sitesの提供条件・上限の公式な裏付けは今回取っていない。\n- 面白いところ: 自分の商用版Markdown CMSは Workers／R2（＋Queues）で組んでおり、まさに同じ部品の話である点。「自前アカウントで素直に組む」と「ChatGPT側の枠に乗る」の差がどこに出るか（上限、継続性、持ち出し可否）は、基盤選びの判断材料になる。本人のCloudflare OSへの評価（既存の道具立てで足りているので当面放置）と並ぶ、「外の枠を借りる」選択肢の観察として置ける。\n- 作れそうなもの: まず公式情報で提供条件と上限を確認するのが先。そのうえで、小さな D1＋R2 の Worker 1本（例: 管理画面まわりの試作）を ChatGPT Sites 側と自前Cloudflare 側の両方に置き、付けられる上限・手間・運用の自由度を比べる試作。本番の置き場を移す話ではなく、あくまで比較実験として。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @nakasyou0（nakasyou、2026-10-30 23:32） <a href=\"https://x.com/nakasyou0/status/2116176314621460594\" target=\"_blank\" rel=\"noopener\">https://x.com/nakasyou0/status/2116176314621460594</a> ／ 投稿内にURLなし。ChatGPT Sitesの公式情報は今回は未確認</li>\n<li><strong>要点</strong>: 投稿者の実践報告。最近は無料のCloudflare Workersの代わりに ChatGPT Sites を使っている。主張の骨子は次のとおり。Plus以上のプランなら Sites を作り放題で、中身は Cloudflare Workers。そのうえで、Workers Paid相当の10GBの D1（SQLiteデータベース）がサイトごとに付き、オブジェクトストレージの R2 がほぼ使い放題（リミットは明記されていない、とのこと）なのでファイルを置きまくっている。単純な D1＋R2 の Worker なら、ChatGPT Sitesへデプロイした方が「めっちゃ強化されたの」が付いてくるのでおすすめ。一方で Durable Objects や Vectorize は使えない。いずれも投稿者の主張であり、ChatGPT Sitesの提供条件・上限の公式な裏付けは今回取っていない。</li>\n<li><strong>面白いところ</strong>: 自分の商用版Markdown CMSは Workers／R2（＋Queues）で組んでおり、まさに同じ部品の話である点。「自前アカウントで素直に組む」と「ChatGPT側の枠に乗る」の差がどこに出るか（上限、継続性、持ち出し可否）は、基盤選びの判断材料になる。本人のCloudflare OSへの評価（既存の道具立てで足りているので当面放置）と並ぶ、「外の枠を借りる」選択肢の観察として置ける。</li>\n<li><strong>作れそうなもの</strong>: まず公式情報で提供条件と上限を確認するのが先。そのうえで、小さな D1＋R2 の Worker 1本（例: 管理画面まわりの試作）を ChatGPT Sites 側と自前Cloudflare 側の両方に置き、付けられる上限・手間・運用の自由度を比べる試作。本番の置き場を移す話ではなく、あくまで比較実験として。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
     },
     {
       "id": "proto/ai-novel-writing-structure",
