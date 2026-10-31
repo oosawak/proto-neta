@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>試作ネタ帳</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#">
+    <span class="brand-mark">試</span>
+    <span class="brand-text">試作ネタ帳<small>この先、試作してみたいものの種</small></span>
+  </a>
+  <span class="site-count" id="site-count"></span>
+</header>
+<main id="app">
+  <p class="loading">読み込んでいます…</p>
+</main>
+<footer class="site-footer">
+  <p>正本は <code>content/posts/</code> の Markdown（1件＝1ファイル）。このページは scripts/build.py が生成した data.json を表示しています。</p>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
