@@ -4,10 +4,25 @@
     "id": "proto",
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
-    "updated": "2026-11-02",
-    "count": 33
+    "updated": "2026-11-03",
+    "count": 34
   },
   "posts": [
+    {
+      "id": "proto/ai-service-20usd-stack",
+      "slug": "ai-service-20usd-stack",
+      "title": "AIサービス自作の部品代は月$20：定番スタックの費用一覧",
+      "date": "2026-11-03",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "AIサービスを一人で作るときの定番部品と費用の一覧。月額がかかるのはClaudeの$20だけで、あとは無料枠とドメイン代、決済手数料で揃う、という実践者の整理。自分の基盤選びとの比較材料として。",
+      "source": "https://www.threads.com/@at7fbdmfmro/post/DfO2dj0CLV6",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: Threads投稿 @at7fbdmfmro（ryo97、2026-11-02） https://www.threads.com/@at7fbdmfmro/post/DfO2dj0CLV6 （共有リンク経由で受領）\n- 要点: 「AIサービスを自分で作るのにかかるのは、月$20だけ」という費用の一覧。内訳は、Claude（コードを書くAI、$20/月）、Supabase（データ保存、無料）、Vercel（公開、無料）、Namecheap（ドメイン、$12/年）、Stripe（決済、2.9%/件）、GitHub（履歴管理、無料）、Resend（メール送信、無料）、Clerk（ログイン・会員登録、無料）、Cloudflare（接続、無料）、PostHog（利用分析、無料）、Sentry（エラー検知、無料）、Upstash（高速なデータ処理、無料）、Pinecone（AI検索用データベース、無料）。月額の総コストは約$20（約3,000円）で、「昔は数百万円かかっていたものが、今ならランチ代より安く揃う」という結び。いずれも無料枠の範囲での話で、規模が大きくなれば従量が増える前提の一覧として読む。\n- 面白いところ: 「サービスを作る」側の部品代の下限が、ここまで具体的に並んでいる点。部品の顔ぶれは、自分の道具立て（GitHub／Cloudflare／Stripe、静的ならMarkdown CMS）と重なる部分と、アカウントや決済を持つサービスならではの部品（Clerk、Supabase、Resend、Sentry、PostHog）の両方が見える。自分の「静的で足りるものは静的に」という線引きと並べると、どこからがこのフルセットの出番かがはっきりする。\n- 作れそうなもの: 試作そのものではなく物差しとして、将来アカウントや決済を持つ小さなサービスを試すときの「部品選びと月額の下限」の基準表にする。逆に、Markdown CMSの商用版の売り文句として「この部品代すら要らない範囲」を言語化する材料にもなる。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: Threads投稿 @at7fbdmfmro（ryo97、2026-11-02） <a href=\"https://www.threads.com/@at7fbdmfmro/post/DfO2dj0CLV6\" target=\"_blank\" rel=\"noopener\">https://www.threads.com/@at7fbdmfmro/post/DfO2dj0CLV6</a> （共有リンク経由で受領）</li>\n<li><strong>要点</strong>: 「AIサービスを自分で作るのにかかるのは、月$20だけ」という費用の一覧。内訳は、Claude（コードを書くAI、$20/月）、Supabase（データ保存、無料）、Vercel（公開、無料）、Namecheap（ドメイン、$12/年）、Stripe（決済、2.9%/件）、GitHub（履歴管理、無料）、Resend（メール送信、無料）、Clerk（ログイン・会員登録、無料）、Cloudflare（接続、無料）、PostHog（利用分析、無料）、Sentry（エラー検知、無料）、Upstash（高速なデータ処理、無料）、Pinecone（AI検索用データベース、無料）。月額の総コストは約$20（約3,000円）で、「昔は数百万円かかっていたものが、今ならランチ代より安く揃う」という結び。いずれも無料枠の範囲での話で、規模が大きくなれば従量が増える前提の一覧として読む。</li>\n<li><strong>面白いところ</strong>: 「サービスを作る」側の部品代の下限が、ここまで具体的に並んでいる点。部品の顔ぶれは、自分の道具立て（GitHub／Cloudflare／Stripe、静的ならMarkdown CMS）と重なる部分と、アカウントや決済を持つサービスならではの部品（Clerk、Supabase、Resend、Sentry、PostHog）の両方が見える。自分の「静的で足りるものは静的に」という線引きと並べると、どこからがこのフルセットの出番かがはっきりする。</li>\n<li><strong>作れそうなもの</strong>: 試作そのものではなく物差しとして、将来アカウントや決済を持つ小さなサービスを試すときの「部品選びと月額の下限」の基準表にする。逆に、Markdown CMSの商用版の売り文句として「この部品代すら要らない範囲」を言語化する材料にもなる。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
     {
       "id": "proto/claude-adb-spare-phone",
       "slug": "claude-adb-spare-phone",
