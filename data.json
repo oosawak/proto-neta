@@ -5,7 +5,7 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-11-04",
-    "count": 35
+    "count": 36
   },
   "posts": [
     {
@@ -22,6 +22,21 @@
       "type": "proto",
       "markdown": "- 元の情報: X投稿 @Ryrenz（Ren、2026-11-03 19:05、中国語） https://x.com/Ryrenz/status/2117558671286616452 ／ 一次情報: GitHub https://github.com/islandmed/SculptForge （GPL-3.0、2026-10-21公開、スター約530）\n- 要点: 「ZBrushのオープンソース代替が来た」という紹介投稿。一次情報で確認できた骨子は次のとおり。Linux／macOS／Windows対応で、テレメトリなし・アカウントなし・機能の有料壁なし。彫刻の核として、動的トポロジー、マスク、ボクセル再メッシュ、四角形再トポロジー、階層細分化などを備え、書き出しはFBX／glTF／OpenUSDほか、Unreal Engineへ直接送る機能とBlender橋渡しアドオンがある。AIは2系統内蔵される。①Brush Lab: ブラシを言葉で注文するとAIが生成する。既定は無料ホストの開放モデル（GPT-OSS 20B）で鍵不要、オフライン時はローカルOllamaへ切り替え、Claude等の自前接続も可。②画像／文章から3D生成: Hunyuan3D 2／2.1、TRELLIS.2、Stable Fast 3DのHugging Faceデモ経由なら無料で下絵のモデルが作れ、自前のComfyUIにもつながる。さらにMCPサーバー（sculptforge-cli --mcp）を内蔵し、Claude Code等から彫刻・変換・書き出しを操作できる。Gaussian Splatの読み込み（スマホ撮影の取り込み、メッシュ化）にも対応。現状はv0.8の早期版で、ZBrushの.ZTLは直接読めない（GoZ互換の交換は可）。\n- 面白いところ: 「高額な専用ソフトの代替」を、単なる模倣でなく、AI生成（下絵作り）とMCP（エージェント操作）まで内蔵して出してきた点。自分の道具立てとの接点も多い。glTF書き出しはThree.jsのブラウザゲームへ持ち込む道になり、Gaussian Splat対応は idol の件（1枚の画像から3D生成）と地続き。自宅GPUサーバー＋ComfyUI／Ollamaという既存の環境にもそのまま乗る。\n- 作れそうなもの: 自宅のUbuntuサーバー（GPU搭載）かMacに入れて、画像から3D生成で下絵を作り、少し彫って glTF で書き出し、Three.jsの試作へ置くところまでを通す試作。あわせて、MCP経由でClaude Codeから「変換と書き出しだけ」を自動化できるかも見る。\n- 入口: チャット",
       "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @Ryrenz（Ren、2026-11-03 19:05、中国語） <a href=\"https://x.com/Ryrenz/status/2117558671286616452\" target=\"_blank\" rel=\"noopener\">https://x.com/Ryrenz/status/2117558671286616452</a> ／ 一次情報: GitHub <a href=\"https://github.com/islandmed/SculptForge\" target=\"_blank\" rel=\"noopener\">https://github.com/islandmed/SculptForge</a> （GPL-3.0、2026-10-21公開、スター約530）</li>\n<li><strong>要点</strong>: 「ZBrushのオープンソース代替が来た」という紹介投稿。一次情報で確認できた骨子は次のとおり。Linux／macOS／Windows対応で、テレメトリなし・アカウントなし・機能の有料壁なし。彫刻の核として、動的トポロジー、マスク、ボクセル再メッシュ、四角形再トポロジー、階層細分化などを備え、書き出しはFBX／glTF／OpenUSDほか、Unreal Engineへ直接送る機能とBlender橋渡しアドオンがある。AIは2系統内蔵される。①Brush Lab: ブラシを言葉で注文するとAIが生成する。既定は無料ホストの開放モデル（GPT-OSS 20B）で鍵不要、オフライン時はローカルOllamaへ切り替え、Claude等の自前接続も可。②画像／文章から3D生成: Hunyuan3D 2／2.1、TRELLIS.2、Stable Fast 3DのHugging Faceデモ経由なら無料で下絵のモデルが作れ、自前のComfyUIにもつながる。さらにMCPサーバー（sculptforge-cli --mcp）を内蔵し、Claude Code等から彫刻・変換・書き出しを操作できる。Gaussian Splatの読み込み（スマホ撮影の取り込み、メッシュ化）にも対応。現状はv0.8の早期版で、ZBrushの.ZTLは直接読めない（GoZ互換の交換は可）。</li>\n<li><strong>面白いところ</strong>: 「高額な専用ソフトの代替」を、単なる模倣でなく、AI生成（下絵作り）とMCP（エージェント操作）まで内蔵して出してきた点。自分の道具立てとの接点も多い。glTF書き出しはThree.jsのブラウザゲームへ持ち込む道になり、Gaussian Splat対応は idol の件（1枚の画像から3D生成）と地続き。自宅GPUサーバー＋ComfyUI／Ollamaという既存の環境にもそのまま乗る。</li>\n<li><strong>作れそうなもの</strong>: 自宅のUbuntuサーバー（GPU搭載）かMacに入れて、画像から3D生成で下絵を作り、少し彫って glTF で書き出し、Three.jsの試作へ置くところまでを通す試作。あわせて、MCP経由でClaude Codeから「変換と書き出しだけ」を自動化できるかも見る。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
+    {
+      "id": "proto/rtkdroid",
+      "slug": "rtkdroid",
+      "title": "RTKDROID：スマホでセンチメートル級のRTK測位とAR計測",
+      "date": "2026-11-04",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "AndroidスマホでRTK測位（センチメートル級の位置測定）とAR計測ができる測量アプリ。スマホ内蔵GNSSのほか外部受信機にも対応し、成果表やSIMA／CSV／DXFの出力まで1台で完結する。歩いて場所を記録する作業の精度を上げる道具。",
+      "source": "https://play.google.com/store/apps/details?id=com.rikainc.rtkdroid",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: Google Play のアプリページ（本人が共有） https://play.google.com/store/apps/details?id=com.rikainc.rtkdroid ／ 提供: Rika Co., Ltd.（rika-rtk.co.jp）\n- 要点: Androidスマホで測量の現場作業をするためのアプリ。位置測定はRTK測位が核で、スマホ内蔵GNSS（L1/L5対応端末）での測位に加え、外部GNSS受信機（u-blox ZED-F9P、Septentrio mosaic等）をUSBでつないだ測位、NTRIP経由の補正情報（VRS等）の受信、単独測位・RTK（キネマティック）・スタティック（タイマー観測と後処理）に対応する。成果の出力は、成果表（PDF）、観測手簿、SIMA、CSV、ジオイドモデルJPGEO2024による標高計算、簡易作図とDXF出力（Jw_cadで読めるmm単位）。AR計測ではカメラの映像上で点を取って距離と高さをその場で測り、既知点（SIMA）で座標を付け、杭探しでは点までの距離と方向へ案内する。自分のスマホを基準局にして補正データをNTRIPキャスターへ配信する機能もある。料金は2週間の無料試用（ARCH相当）のあと、LITE／ARCH／PROの定期購読制。Android 7.0以降、AR計測はARCore対応端末が必要。\n- 面白いところ: 「センチメートル級の位置」が、専門の測量機材でなく手元のスマホ＋（必要なら）外付け受信機で取れる点。自分の活動は、町を歩いて場所を記録し、地図のサイトにするのが中心なので、古道や坂、史跡の位置をこの精度で記録できると、3Dマップやグルメ地図の「場所の確かさ」が一段上がる。成果がSIMA／CSV／DXFという実務の形式で出てくるのも、他の道具へ渡しやすい。\n- 作れそうなもの: まず内蔵GNSSの範囲で試し、歩きの記録（坂や堰、城跡の地点）の位置精度が通常のGPS記録とどれだけ違うかを比べる試作。効くようなら、ZED-F9P級の外部受信機を足して、3Dマップ側の地点データや現地確認の基準点取りに使う形を検討する。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: Google Play のアプリページ（本人が共有） <a href=\"https://play.google.com/store/apps/details?id=com.rikainc.rtkdroid\" target=\"_blank\" rel=\"noopener\">https://play.google.com/store/apps/details?id=com.rikainc.rtkdroid</a> ／ 提供: Rika Co., Ltd.（rika-rtk.co.jp）</li>\n<li><strong>要点</strong>: Androidスマホで測量の現場作業をするためのアプリ。位置測定はRTK測位が核で、スマホ内蔵GNSS（L1/L5対応端末）での測位に加え、外部GNSS受信機（u-blox ZED-F9P、Septentrio mosaic等）をUSBでつないだ測位、NTRIP経由の補正情報（VRS等）の受信、単独測位・RTK（キネマティック）・スタティック（タイマー観測と後処理）に対応する。成果の出力は、成果表（PDF）、観測手簿、SIMA、CSV、ジオイドモデルJPGEO2024による標高計算、簡易作図とDXF出力（Jw_cadで読めるmm単位）。AR計測ではカメラの映像上で点を取って距離と高さをその場で測り、既知点（SIMA）で座標を付け、杭探しでは点までの距離と方向へ案内する。自分のスマホを基準局にして補正データをNTRIPキャスターへ配信する機能もある。料金は2週間の無料試用（ARCH相当）のあと、LITE／ARCH／PROの定期購読制。Android 7.0以降、AR計測はARCore対応端末が必要。</li>\n<li><strong>面白いところ</strong>: 「センチメートル級の位置」が、専門の測量機材でなく手元のスマホ＋（必要なら）外付け受信機で取れる点。自分の活動は、町を歩いて場所を記録し、地図のサイトにするのが中心なので、古道や坂、史跡の位置をこの精度で記録できると、3Dマップやグルメ地図の「場所の確かさ」が一段上がる。成果がSIMA／CSV／DXFという実務の形式で出てくるのも、他の道具へ渡しやすい。</li>\n<li><strong>作れそうなもの</strong>: まず内蔵GNSSの範囲で試し、歩きの記録（坂や堰、城跡の地点）の位置精度が通常のGPS記録とどれだけ違うかを比べる試作。効くようなら、ZED-F9P級の外部受信機を足して、3Dマップ側の地点データや現地確認の基準点取りに使う形を検討する。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
     },
     {
       "id": "proto/ai-service-20usd-stack",
