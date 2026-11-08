@@ -5,9 +5,24 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-11-08",
-    "count": 41
+    "count": 42
   },
   "posts": [
+    {
+      "id": "proto/plateau-city-glb",
+      "slug": "plateau-city-glb",
+      "title": "PLATEAUの3D都市データをGLBに変換して公開したデータセット",
+      "date": "2026-11-08",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "東京・大阪・横浜・名古屋・札幌のPLATEAU 3D都市モデルを、1kmタイルのGLB形式に変換してHugging Faceで無料公開したデータセットの紹介投稿。",
+      "source": "https://x.com/bei351009016/status/2119022943883907400",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: X投稿 @bei351009016（傲慢、2026-11-07 20:03、中国語） https://x.com/bei351009016/status/2119022943883907400 （いいね705、ブックマーク654）。データセット本体は Hugging Face の codepawl/plateau-city-glb https://huggingface.co/datasets/codepawl/plateau-city-glb\n- 要点: 国土交通省の3D都市モデル（PLATEAU）を、1km四方のタイルに切ったGLB形式で公開したもの。全797タイル。対象は東京23区の全部と、大阪・横浜・名古屋・札幌の中心部。PLATEAUが撮影している所はテクスチャ付きLOD2建物、それ以外はLOD1のブロックで、地形と道路も入り、当たり判定用のメッシュと、タイル配置を示す tiles.json も付く。Web用やゲームエンジン用など複数の形式が用意され、ライセンスはCC BY 4.0。\n- 面白いところ: PLATEAUの生データ（CityGML）の変換という一番面倒な下処理が済んでいるので、Blender、three.js、Godot に街をそのまま置ける。今朝登録した「PLATEAUの3Dデータから城の空撮風動画を作る手法」が生データから作る側の話で、こちらは変換済みを拾ってくる側の話。対になっている。\n- 注意点: 対象は5都市だけで仙台はない。PLATEAU本体には仙台市のデータがある（2022年度整備で宮城県内初。LOD1が市域の約43%、中心部はLOD2、2024年度には青葉通の一部と仙台駅西口ペデストリアンデッキのLOD3も追加）が、形式はCityGMLや3D Tilesなので、GLBで使うなら自分で変換する手間が要る。\n- 作れそうなもの: three.jsの3DマップやDungeon Studioの街並みの土台に、出来合いの都市タイルを置く使い方。仙台で同じことをするなら、公式データをGLBへ変換する道具作りが先になる。今回は試作せず、技術ネタとして貯めるだけ。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: X投稿 @bei351009016（傲慢、2026-11-07 20:03、中国語） <a href=\"https://x.com/bei351009016/status/2119022943883907400\" target=\"_blank\" rel=\"noopener\">https://x.com/bei351009016/status/2119022943883907400</a> （いいね705、ブックマーク654）。データセット本体は Hugging Face の codepawl/plateau-city-glb <a href=\"https://huggingface.co/datasets/codepawl/plateau-city-glb\" target=\"_blank\" rel=\"noopener\">https://huggingface.co/datasets/codepawl/plateau-city-glb</a></li>\n<li><strong>要点</strong>: 国土交通省の3D都市モデル（PLATEAU）を、1km四方のタイルに切ったGLB形式で公開したもの。全797タイル。対象は東京23区の全部と、大阪・横浜・名古屋・札幌の中心部。PLATEAUが撮影している所はテクスチャ付きLOD2建物、それ以外はLOD1のブロックで、地形と道路も入り、当たり判定用のメッシュと、タイル配置を示す tiles.json も付く。Web用やゲームエンジン用など複数の形式が用意され、ライセンスはCC BY 4.0。</li>\n<li><strong>面白いところ</strong>: PLATEAUの生データ（CityGML）の変換という一番面倒な下処理が済んでいるので、Blender、three.js、Godot に街をそのまま置ける。今朝登録した「PLATEAUの3Dデータから城の空撮風動画を作る手法」が生データから作る側の話で、こちらは変換済みを拾ってくる側の話。対になっている。</li>\n<li>注意点: 対象は5都市だけで仙台はない。PLATEAU本体には仙台市のデータがある（2022年度整備で宮城県内初。LOD1が市域の約43%、中心部はLOD2、2024年度には青葉通の一部と仙台駅西口ペデストリアンデッキのLOD3も追加）が、形式はCityGMLや3D Tilesなので、GLBで使うなら自分で変換する手間が要る。</li>\n<li><strong>作れそうなもの</strong>: three.jsの3DマップやDungeon Studioの街並みの土台に、出来合いの都市タイルを置く使い方。仙台で同じことをするなら、公式データをGLBへ変換する道具作りが先になる。今回は試作せず、技術ネタとして貯めるだけ。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
     {
       "id": "proto/plateau-castle-video",
       "slug": "plateau-castle-video",
