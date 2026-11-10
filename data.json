@@ -4,10 +4,25 @@
     "id": "proto",
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
-    "updated": "2026-11-09",
-    "count": 44
+    "updated": "2026-11-10",
+    "count": 45
   },
   "posts": [
+    {
+      "id": "proto/melonjs",
+      "slug": "melonjs",
+      "title": "melonJS：同じゲームコードのままWebGPU／WebGL 2／Canvas2Dで動くHTML5ゲームエンジン",
+      "date": "2026-11-10",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "MITのオープンソースHTML5ゲームエンジン（melonJS 2）。描画の土台をWebGPU・WebGL 2・Canvas2Dから自動で選び、ゲーム側のコードは変えなくてよい。物理・タイルマップ・音・入力・カメラ・パーティクル・UIが1モジュールに揃い、約250KBで依存なし。",
+      "source": "https://x.com/dextune/status/2119739277600768429",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: DEXTUNE（@dextune）のX投稿（2026-11-09）。オープンソースのゲームエンジン melonJS の紹介。\n- 一次情報（GitHub melonjs/melonJS のREADMEで確認）: ライセンスはMIT。2011年から続くプロジェクトで、現在の melonJS 2 は AltByte が保守している。エンジン全体で約250KB（minzipped）、依存ライブラリなし。描画は AUTO モードが起動時に WebGPU → WebGL 2 → Canvas2D の順に自動で切り替わり、ゲーム側のコード変更は不要という設計。\n- 要点: 物理演算（多角形の当たり判定）、タイルマップ、音（WebAudioの空間音響）、入力（ゲームパッド対応）、カメラ、パーティクル、UIが1モジュールに揃う。場面の読み込みは level.load 一発で、2Dは Tiled のマップ形式、3Dは glTF／GLB のシーン（Blenderで作って書き出したものをそのまま）に対応する。READMEにはAIエージェントと一緒に作るための節もあり、リポジトリに CLAUDE.md や AGENTS.md、Claude用プラグインも入っている。\n- 面白いところ: 「描画の土台はエンジンが吸収し、ゲームは1回書く」という割り切りが、本人のHTMLプレイヤー（受け皿が共通部品を持ち、カセットは中身に集中する）と考え方が近い。GLBシーンをそのまま読み込める点は、登録済みの Google Three-Live（Three.jsコードからGLB化）とつながる。\n- 作れそうなもの: HTMLカセットの2Dゲームを melonJS で作る試作。Tiledでマップを作って読み込む形や、Three-Liveで作ったGLBを場面として読み込む形が考えられる。本人の普段の素のJavaScript＋Three.jsとの書き味の違いも、試す価値のある比較点。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: DEXTUNE（@dextune）のX投稿（2026-11-09）。オープンソースのゲームエンジン melonJS の紹介。</li>\n<li>一次情報（GitHub melonjs/melonJS のREADMEで確認）: ライセンスはMIT。2011年から続くプロジェクトで、現在の melonJS 2 は AltByte が保守している。エンジン全体で約250KB（minzipped）、依存ライブラリなし。描画は AUTO モードが起動時に WebGPU → WebGL 2 → Canvas2D の順に自動で切り替わり、ゲーム側のコード変更は不要という設計。</li>\n<li><strong>要点</strong>: 物理演算（多角形の当たり判定）、タイルマップ、音（WebAudioの空間音響）、入力（ゲームパッド対応）、カメラ、パーティクル、UIが1モジュールに揃う。場面の読み込みは level.load 一発で、2Dは Tiled のマップ形式、3Dは glTF／GLB のシーン（Blenderで作って書き出したものをそのまま）に対応する。READMEにはAIエージェントと一緒に作るための節もあり、リポジトリに CLAUDE.md や AGENTS.md、Claude用プラグインも入っている。</li>\n<li><strong>面白いところ</strong>: 「描画の土台はエンジンが吸収し、ゲームは1回書く」という割り切りが、本人のHTMLプレイヤー（受け皿が共通部品を持ち、カセットは中身に集中する）と考え方が近い。GLBシーンをそのまま読み込める点は、登録済みの Google Three-Live（Three.jsコードからGLB化）とつながる。</li>\n<li><strong>作れそうなもの</strong>: HTMLカセットの2Dゲームを melonJS で作る試作。Tiledでマップを作って読み込む形や、Three-Liveで作ったGLBを場面として読み込む形が考えられる。本人の普段の素のJavaScript＋Three.jsとの書き味の違いも、試す価値のある比較点。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
     {
       "id": "proto/pixel-art-atlas-1-4m",
       "slug": "pixel-art-atlas-1-4m",
