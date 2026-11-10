@@ -5,9 +5,24 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-11-10",
-    "count": 45
+    "count": 46
   },
   "posts": [
+    {
+      "id": "proto/rigby2d",
+      "slug": "rigby2d",
+      "title": "Rigby2D：SpineやDragonBonesの系譜の無料OSS 2Dリギング・アニメーションエディタ（MCPサーバー内蔵）",
+      "date": "2026-11-10",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "無料のオープンソース2Dスケルタルアニメーションエディタ。レイヤー分けPSDの自動リグ、IKや物理、音声からのリップシンク、映像書き出しまで備え、実行側はJavaScript・Phaser・Rust・Godot・Unity・Cocos Creatorなど。AIアシスタント用のMCPサーバーを内蔵する。",
+      "source": "https://x.com/dextune/status/2119766955699945729",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: DEXTUNE（@dextune）のX投稿（2026-11-09）。SpineやDragonBonesの流れを汲む、無料オープンソースの2Dリギング・アニメーションエディタ Rigby2D の紹介。\n- 一次情報（GitHub jaisurya-dev-art/rigby2d のREADMEで確認）: ライセンスは MIT または Apache-2.0 の選択制。現在はパブリックベータで、2026年10月にできた新しいリポジトリ。Windows／macOS／Linuxのアプリ（Tauri製）に加えて、ブラウザでそのまま動くフルエディタもある。\n- 要点: 絵に骨とメッシュを付けてアニメーションさせ、映像として書き出すか、ゲームエンジンへ持っていく道具。レイヤー分けしたPSDやSVGから骨・IKまで自動で付ける AutoRig、グラフエディタ、音声からのリップシンク（端末上のWhisperで文字起こし）、Pythonスクリプト、AIアシスタント用のMCPサーバー内蔵が特徴。書き出しはスケルトンJSONと .skel で、実行側はJavaScript・Phaser・Rust・Godot・Unity・Defold・Cocos Creator。Spineの書き出しやDragonBonesのプロジェクトも読み込める。\n- 面白いところ: 登録済みの StandRig（AIがMCP経由で編集する2Dリギング）と同じく「エディタにMCPサーバーを内蔵してAIに触らせる」設計で、こちらは映像制作（フィルムワークスペース、4K・タイムコード・カメラ）まで含むフルエディタ寄り。パーツ分け済みPSDが前提のStandRigに対して、Rigby2DはPSDから自動でリグを付ける側に強い。\n- 作れそうなもの: 自作イラストや生成画像のキャラクターを、骨アニメーションで動かす素材作り。ブラウザ版エディタがあるので導入の敷居が低く、書き出したJSON／スプライトシートはWebゲーム側にも渡せる。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: DEXTUNE（@dextune）のX投稿（2026-11-09）。SpineやDragonBonesの流れを汲む、無料オープンソースの2Dリギング・アニメーションエディタ Rigby2D の紹介。</li>\n<li>一次情報（GitHub jaisurya-dev-art/rigby2d のREADMEで確認）: ライセンスは MIT または Apache-2.0 の選択制。現在はパブリックベータで、2026年10月にできた新しいリポジトリ。Windows／macOS／Linuxのアプリ（Tauri製）に加えて、ブラウザでそのまま動くフルエディタもある。</li>\n<li><strong>要点</strong>: 絵に骨とメッシュを付けてアニメーションさせ、映像として書き出すか、ゲームエンジンへ持っていく道具。レイヤー分けしたPSDやSVGから骨・IKまで自動で付ける AutoRig、グラフエディタ、音声からのリップシンク（端末上のWhisperで文字起こし）、Pythonスクリプト、AIアシスタント用のMCPサーバー内蔵が特徴。書き出しはスケルトンJSONと .skel で、実行側はJavaScript・Phaser・Rust・Godot・Unity・Defold・Cocos Creator。Spineの書き出しやDragonBonesのプロジェクトも読み込める。</li>\n<li><strong>面白いところ</strong>: 登録済みの StandRig（AIがMCP経由で編集する2Dリギング）と同じく「エディタにMCPサーバーを内蔵してAIに触らせる」設計で、こちらは映像制作（フィルムワークスペース、4K・タイムコード・カメラ）まで含むフルエディタ寄り。パーツ分け済みPSDが前提のStandRigに対して、Rigby2DはPSDから自動でリグを付ける側に強い。</li>\n<li><strong>作れそうなもの</strong>: 自作イラストや生成画像のキャラクターを、骨アニメーションで動かす素材作り。ブラウザ版エディタがあるので導入の敷居が低く、書き出したJSON／スプライトシートはWebゲーム側にも渡せる。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
     {
       "id": "proto/melonjs",
       "slug": "melonjs",
