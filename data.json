@@ -5,9 +5,24 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-11-20",
-    "count": 55
+    "count": 56
   },
   "posts": [
+    {
+      "id": "proto/first-order-model",
+      "slug": "first-order-model",
+      "title": "First Order Motion Model：静止画1枚を「運転動画」の動きでアニメ化する古典（NeurIPS 2019、MIT）",
+      "date": "2026-11-20",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "素材の静止画と、動きの見本になる動画（ドライビング動画）を渡すと、静止画の被写体が見本の動きをする動画を生成する手法の公式実装。キーポイントの動きを教師なしで学習するのが核で、顔・ファッション・太極拳などデータセットごとに学習済みモデルがある。",
+      "source": "https://github.com/AliaksandrSiarohin/first-order-model",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: 本人がGitHubリポジトリを直接共有（AliaksandrSiarohin/first-order-model）。論文「First Order Motion Model for Image Animation」（NeurIPS 2019）の公式実装。\n- 一次情報（READMEで確認）: ライセンスはMIT。使い方は demo.py に素材画像とドライビング動画とチェックポイントを渡すだけで、結果は result.mp4。相対座標モード（見本の動きの変化分だけを素材へ足す）が推奨で、その場合は素材と見本の最初の姿勢が揃っていることが条件。チェックポイントは VoxCeleb（顔）、Fashion、MGIF、Taichi 等のデータセット別に配布されている。Colab／Kaggle のデモノートブックと、Hugging Face Spaces のデモもある。Docker 実行の手順も用意されている。\n- 面白いところ: 2019年の手法で、今の動画生成や Live2D 系と違って「動きは別の動画から借りてくる」移植の発想がむき出しなところ。登録済みの AnimatedDrawings（BVHの骨の動きを絵に流す）や、コードで作る図解アニメ（プログラムで動かす）と並べると、「絵を動かす」方法の系譜（モーション移植→骨リグ→コード生成）が揃う。自分の動画を運転側にすれば、自分の身振りをイラストに移すこともできる。\n- 注意点: 解像度は256×256級が中心で、今の基準では粗い。データセットごとに学習されたモデルを使う前提なので、汎用の被写体にはそのまま効かない。チェックポイントの配布は Google Drive／Yandex Disk 経由。\n- 作れそうなもの: 顔写真やキャラ絵に、自分の表情・身振りの動画を移す短い動画素材。ミューズさんの絵を喋らせる用途なら、口パク自動の図解アニメの型とどちらが軽いかの比較材料になる。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: 本人がGitHubリポジトリを直接共有（AliaksandrSiarohin/first-order-model）。論文「First Order Motion Model for Image Animation」（NeurIPS 2019）の公式実装。</li>\n<li>一次情報（READMEで確認）: ライセンスはMIT。使い方は demo.py に素材画像とドライビング動画とチェックポイントを渡すだけで、結果は result.mp4。相対座標モード（見本の動きの変化分だけを素材へ足す）が推奨で、その場合は素材と見本の最初の姿勢が揃っていることが条件。チェックポイントは VoxCeleb（顔）、Fashion、MGIF、Taichi 等のデータセット別に配布されている。Colab／Kaggle のデモノートブックと、Hugging Face Spaces のデモもある。Docker 実行の手順も用意されている。</li>\n<li><strong>面白いところ</strong>: 2019年の手法で、今の動画生成や Live2D 系と違って「動きは別の動画から借りてくる」移植の発想がむき出しなところ。登録済みの AnimatedDrawings（BVHの骨の動きを絵に流す）や、コードで作る図解アニメ（プログラムで動かす）と並べると、「絵を動かす」方法の系譜（モーション移植→骨リグ→コード生成）が揃う。自分の動画を運転側にすれば、自分の身振りをイラストに移すこともできる。</li>\n<li>注意点: 解像度は256×256級が中心で、今の基準では粗い。データセットごとに学習されたモデルを使う前提なので、汎用の被写体にはそのまま効かない。チェックポイントの配布は Google Drive／Yandex Disk 経由。</li>\n<li><strong>作れそうなもの</strong>: 顔写真やキャラ絵に、自分の表情・身振りの動画を移す短い動画素材。ミューズさんの絵を喋らせる用途なら、口パク自動の図解アニメの型とどちらが軽いかの比較材料になる。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
     {
       "id": "proto/codex-textbook",
       "slug": "codex-textbook",
