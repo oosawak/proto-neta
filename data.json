@@ -5,9 +5,24 @@
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
     "updated": "2026-11-20",
-    "count": 56
+    "count": 57
   },
   "posts": [
+    {
+      "id": "proto/psd2live",
+      "slug": "psd2live",
+      "title": "PSD2Live：レイヤー分けPSDからLive2Dモデルを自動リグ生成し、.moc3で書き出すOSSエディタ（MCPでエージェント編集可）",
+      "date": "2026-11-20",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "命名規則に沿って分けたPSDを読み込むと、メッシュ・変形器・五官パラメータ・待機や瞬きの動作・髪の物理まで自動生成して、編集できるLive2Dモデルにするオープンソースのエディタ。Cubism形式（.cmo3／.moc3）で書き出しでき、VTube Studioや网页でも使える。",
+      "source": "https://github.com/tsunehimatoi/psd2live",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: 本人がGitHubリポジトリを直接共有（tsunehimatoi/psd2live）。READMEは中国語中心。\n- 一次情報（READMEで確認）: ライセンスは本体とエンジンが GPL-3.0、Rust製ランタイム p2lrt と形式まわりのモジュールは MIT。自動生成は中・英・日・韓のレイヤー名を認識し、プリセット（最小／デフォルト／完整）を選ぶと数分で動く初版が出る。Cubism に無い骨格・IK・布や髪のシミュレーションは、書き出し時に原生の変形器やキーフォームへ焼き込む設計で、書き出したモデルは PSD2Live に依存しない。配布は Windows／Linux／macOS のインストールパッケージがあり、Java実行環境同梱。\n- 書き出し先: Cubism Editor用 .cmo3、実行用 .moc3 一式、VTube Studio用ファイル一式、自前ランタイム .p2lrt（C／.NET／Android／Godot 4／ブラウザのWebGLプレイヤー）、PNG連番・GIF・MP4等の動画、実験的に Spine／DragonBones／glTF（コマンドラインのみ）。\n- 面白いところ: ローカルMCPサーバー（公開操作180余り）を内蔵していて、Claude Code や Codex が工程ファイルを直接読み書きできること。「AIにPSDを渡して初版を作らせ、人は画布で直す」という、本人のエージェント分担の型そのままの道具になっている。手作業の編集は再生成しても消えないよう「再演できる編集」として保存される設計も気が利いている。\n- 位置づけ: 登録済みの StandRig（パーツ分けPSDをAIがMCPで編集するリギング）や Rigby2D（Spine系譜の自動リグ）と同分野で、こちらは Live2D／Cubism 形式への書き出しと、配信向け（VTube Studio）まで一貫しているのが違い。ミューズさんの2D版を考えるなら最有力候補の形。\n- 注意点: 2026年9月に始まったばかりの若いリポジトリで、更新は速いが作りはまだ動いている最中。自動生成の出来はPSDの分け方と命名に強く依存する。本体が GPL-3.0 なので、組み込んで配る場合は条件の確認が要る（書き出したモデル自体はこの限りではない、とREADMEはしている）。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: 本人がGitHubリポジトリを直接共有（tsunehimatoi/psd2live）。READMEは中国語中心。</li>\n<li>一次情報（READMEで確認）: ライセンスは本体とエンジンが GPL-3.0、Rust製ランタイム p2lrt と形式まわりのモジュールは MIT。自動生成は中・英・日・韓のレイヤー名を認識し、プリセット（最小／デフォルト／完整）を選ぶと数分で動く初版が出る。Cubism に無い骨格・IK・布や髪のシミュレーションは、書き出し時に原生の変形器やキーフォームへ焼き込む設計で、書き出したモデルは PSD2Live に依存しない。配布は Windows／Linux／macOS のインストールパッケージがあり、Java実行環境同梱。</li>\n<li>書き出し先: Cubism Editor用 .cmo3、実行用 .moc3 一式、VTube Studio用ファイル一式、自前ランタイム .p2lrt（C／.NET／Android／Godot 4／ブラウザのWebGLプレイヤー）、PNG連番・GIF・MP4等の動画、実験的に Spine／DragonBones／glTF（コマンドラインのみ）。</li>\n<li><strong>面白いところ</strong>: ローカルMCPサーバー（公開操作180余り）を内蔵していて、Claude Code や Codex が工程ファイルを直接読み書きできること。「AIにPSDを渡して初版を作らせ、人は画布で直す」という、本人のエージェント分担の型そのままの道具になっている。手作業の編集は再生成しても消えないよう「再演できる編集」として保存される設計も気が利いている。</li>\n<li>位置づけ: 登録済みの StandRig（パーツ分けPSDをAIがMCPで編集するリギング）や Rigby2D（Spine系譜の自動リグ）と同分野で、こちらは Live2D／Cubism 形式への書き出しと、配信向け（VTube Studio）まで一貫しているのが違い。ミューズさんの2D版を考えるなら最有力候補の形。</li>\n<li>注意点: 2026年9月に始まったばかりの若いリポジトリで、更新は速いが作りはまだ動いている最中。自動生成の出来はPSDの分け方と命名に強く依存する。本体が GPL-3.0 なので、組み込んで配る場合は条件の確認が要る（書き出したモデル自体はこの限りではない、とREADMEはしている）。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
     {
       "id": "proto/first-order-model",
       "slug": "first-order-model",
