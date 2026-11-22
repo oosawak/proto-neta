@@ -4,10 +4,25 @@
     "id": "proto",
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
-    "updated": "2026-11-20",
-    "count": 57
+    "updated": "2026-11-22",
+    "count": 58
   },
   "posts": [
+    {
+      "id": "proto/utokyo-cs-course",
+      "slug": "utokyo-cs-course",
+      "title": "東京大学「コンピュータシステム概論」：全12章の講義動画と資料がUTokyo Channelで無料公開",
+      "date": "2026-11-22",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "Webサービスの提供に必要な知識を、環境準備からGit、Python、データ形式、SSH、ログ管理、データベース、SSL/TLS、Flaskでの実装まで通しで学ぶ東大の講義（小林克志）。全12章の動画と講義資料が無料で見られる。",
+      "source": "https://x.com/hayatasuuu/status/2123537610920337595",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: はやたす（@hayatasuuu）のX投稿（2026-11-20）。2025年にNVIDIAの「AI Learning Essentials」でも紹介された講義、とのこと（投稿の記載）。\n- 一次情報（UTokyo Channel のシリーズページで確認）: https://ch.u-tokyo.ac.jp/series/?id=YiaHTyPXKDBy 。情報理工学系研究科の講義で、講師は小林克志。全12章の構成は、1 環境準備、2 ソフトウェア構成管理（Git）、3・4 Pythonプログラミング、5 デジタルデータ形式、6 SSHによる遠隔ログイン、7 コンピュータの構成要素と性能、8 ログ管理、9 データベース、10 SSL/TLS、11 Flaskサンプル、12 Flask＋matplotlibサンプル。各章に動画があり、講義資料も付いている。UTokyo OCW 側にも同じ講義がある。\n- 面白いところ: 「試作の道具」というより、本人の守備範囲（Linux、Git、サーバー運用、Webサービス構築）とほぼ重なる基礎の総ざらいが、大学の講義として無料で通しで見られるところ。教える側の立場では、カリキュラムの組み立て方や資料の作り方の参照にもなる。\n- 作れそうなもの: そのまま教材研究用。学生や身近な人に「まずこれを通しで見て」と渡せる基礎コースとして控えておく。自分の作業で穴がある章（ログ管理、SSL/TLSなど）だけ拾って見る使い方もできる。\n- 入口: チャット\n- 補足: この投稿は2026-11-20に受け取ったが、X側のアクセス拒否（403）で読めず保留になっていたもの。2026-11-22の再試行で読み取りできた。",
+      "html": "<ul>\n<li><strong>元の情報</strong>: はやたす（@hayatasuuu）のX投稿（2026-11-20）。2025年にNVIDIAの「AI Learning Essentials」でも紹介された講義、とのこと（投稿の記載）。</li>\n<li>一次情報（UTokyo Channel のシリーズページで確認）: <a href=\"https://ch.u-tokyo.ac.jp/series/?id=YiaHTyPXKDBy\" target=\"_blank\" rel=\"noopener\">https://ch.u-tokyo.ac.jp/series/?id=YiaHTyPXKDBy</a> 。情報理工学系研究科の講義で、講師は小林克志。全12章の構成は、1 環境準備、2 ソフトウェア構成管理（Git）、3・4 Pythonプログラミング、5 デジタルデータ形式、6 SSHによる遠隔ログイン、7 コンピュータの構成要素と性能、8 ログ管理、9 データベース、10 SSL/TLS、11 Flaskサンプル、12 Flask＋matplotlibサンプル。各章に動画があり、講義資料も付いている。UTokyo OCW 側にも同じ講義がある。</li>\n<li><strong>面白いところ</strong>: 「試作の道具」というより、本人の守備範囲（Linux、Git、サーバー運用、Webサービス構築）とほぼ重なる基礎の総ざらいが、大学の講義として無料で通しで見られるところ。教える側の立場では、カリキュラムの組み立て方や資料の作り方の参照にもなる。</li>\n<li><strong>作れそうなもの</strong>: そのまま教材研究用。学生や身近な人に「まずこれを通しで見て」と渡せる基礎コースとして控えておく。自分の作業で穴がある章（ログ管理、SSL/TLSなど）だけ拾って見る使い方もできる。</li>\n<li><strong>入口</strong>: チャット</li>\n<li>補足: この投稿は2026-11-20に受け取ったが、X側のアクセス拒否（403）で読めず保留になっていたもの。2026-11-22の再試行で読み取りできた。</li>\n</ul>"
+    },
     {
       "id": "proto/psd2live",
       "slug": "psd2live",
