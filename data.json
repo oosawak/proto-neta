@@ -4,10 +4,25 @@
     "id": "proto",
     "title": "試作ネタ帳",
     "subtitle": "この先、試作してみたいものの種",
-    "updated": "2026-11-22",
-    "count": 60
+    "updated": "2026-11-25",
+    "count": 61
   },
   "posts": [
+    {
+      "id": "proto/bambu-cli",
+      "slug": "bambu-cli",
+      "title": "bambu-cli：Bambu Labの3DプリンターをCLIから「スライス→転送→印刷開始→監視」まで一気通貫で叩くOSS（MIT）",
+      "date": "2026-11-25",
+      "status": "stock",
+      "status_label": "ストック",
+      "category": "試作ネタ",
+      "summary": "Bambu Studio 純正CLIはスライスだけで印刷指令が出せない、という穴を埋める道具。ヘッドレススライスと、LAN経由のFTPS転送・MQTT印刷開始・状態取得を1つのCLIに統合し、ターミナルやAIエージェントから直接3D印刷できるようにしたもの。A1 miniで実機検証済み。",
+      "source": "https://x.com/hAru_mAki_ch/status/2125477103051456745",
+      "entry": "チャット",
+      "type": "proto",
+      "markdown": "- 元の情報: Maki@Sunwood AI Labs.（@hAru_mAki_ch）のX投稿（2026-11-25）。作者は、MuseとGoogleの機能だけで作ったサーバーレス家計簿で以前話題になっていた人。一次情報は GitHub Sunwood-ai-labs/bambu-cli のREADMEで確認。MITライセンス、Python 3.10以上、リポジトリ公開は2026-11-24。\n- 仕組み: Bambu Studio CLI（ヘッドレススライス）と bambulabs-api（LAN制御）を組み合わせたもの。コマンドは config／slice／upload／print／status／pause／resume／stop／light／gcode。print に .stl や .3mf を渡すと、スライス→FTPS（ポート990）で本体へ転送→MQTT（8883）で印刷開始までを一括でやる。status --json で進捗・レイヤー・ノズルやベッドの温度・残り時間・エラーが機械可読に取れる。\n- 前提: プリンター側で LAN Only Mode と Developer Mode を有効化し、IPアドレス・Access Code・シリアル番号を設定ファイル（~/.bambu-cli/config.json）に保存する。検証環境は A1 mini＋Windows＋Bambu Studio v02.09.01.70。\n- ハマりどころ（投稿とREADMEの両方に明記）: FTPSの990は通るのにMQTTの8883がタイムアウトする場合は、A1 mini のMQTT同時接続数がごく小さいためで、別PCで開いている Bambu Studio を閉じると開通する。\n- 面白いところ: 「AIエージェントから実機を直接動かす」ための道具立てが、状態取得のJSON化まで含めて揃っているところ。本人の文脈では、trellis.cpp等で作った3Dモデル（GLB）を印刷可能な形にして実物化する出口として、また「エージェントに物理側の手を付ける」系譜（登録済みの「予備スマホをClaudeの手にする」等）と並ぶ。\n- 注意点: 公開直後で利用実績はまだ少ない。対応は実質A1 mini検証のみで、他機種は試作時に確認が要る。Access Codeを扱うので、設定ファイルの置き場所と公開範囲には注意。\n- 入口: チャット",
+      "html": "<ul>\n<li><strong>元の情報</strong>: Maki@Sunwood AI Labs.（@hAru_mAki_ch）のX投稿（2026-11-25）。作者は、MuseとGoogleの機能だけで作ったサーバーレス家計簿で以前話題になっていた人。一次情報は GitHub Sunwood-ai-labs/bambu-cli のREADMEで確認。MITライセンス、Python 3.10以上、リポジトリ公開は2026-11-24。</li>\n<li>仕組み: Bambu Studio CLI（ヘッドレススライス）と bambulabs-api（LAN制御）を組み合わせたもの。コマンドは config／slice／upload／print／status／pause／resume／stop／light／gcode。print に .stl や .3mf を渡すと、スライス→FTPS（ポート990）で本体へ転送→MQTT（8883）で印刷開始までを一括でやる。status --json で進捗・レイヤー・ノズルやベッドの温度・残り時間・エラーが機械可読に取れる。</li>\n<li>前提: プリンター側で LAN Only Mode と Developer Mode を有効化し、IPアドレス・Access Code・シリアル番号を設定ファイル（~/.bambu-cli/config.json）に保存する。検証環境は A1 mini＋Windows＋Bambu Studio v02.09.01.70。</li>\n<li>ハマりどころ（投稿とREADMEの両方に明記）: FTPSの990は通るのにMQTTの8883がタイムアウトする場合は、A1 mini のMQTT同時接続数がごく小さいためで、別PCで開いている Bambu Studio を閉じると開通する。</li>\n<li><strong>面白いところ</strong>: 「AIエージェントから実機を直接動かす」ための道具立てが、状態取得のJSON化まで含めて揃っているところ。本人の文脈では、trellis.cpp等で作った3Dモデル（GLB）を印刷可能な形にして実物化する出口として、また「エージェントに物理側の手を付ける」系譜（登録済みの「予備スマホをClaudeの手にする」等）と並ぶ。</li>\n<li>注意点: 公開直後で利用実績はまだ少ない。対応は実質A1 mini検証のみで、他機種は試作時に確認が要る。Access Codeを扱うので、設定ファイルの置き場所と公開範囲には注意。</li>\n<li><strong>入口</strong>: チャット</li>\n</ul>"
+    },
     {
       "id": "proto/utokyo-cs-course",
       "slug": "utokyo-cs-course",
